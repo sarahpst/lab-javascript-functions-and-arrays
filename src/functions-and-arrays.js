@@ -44,15 +44,14 @@ function sum(mixedArr) {
     if (typeof mixedArr[i] === "object" ) {
       throw new Error("Unsupported data type sir or ma'am");
     } 
-    else if{
-       (typeof mixedArr[i] === "string") {
+    else if(typeof mixedArr[i] === "string") {
         sum += mixedArr[i].length;
       } 
     else {
         sum += mixedArr[i];
       }
     }
-  }
+  
   return sum;
 };
 
