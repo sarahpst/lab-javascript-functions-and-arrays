@@ -43,10 +43,12 @@ function sum(mixedArr) {
   for (let i = 0; i < mixedArr.length; i++) {
     if (typeof mixedArr[i] === "object" ) {
       throw new Error("Unsupported data type sir or ma'am");
-    } else {
-      if (typeof mixedArr[i] === "string") {
+    } 
+    else if{
+       (typeof mixedArr[i] === "string") {
         sum += mixedArr[i].length;
-      } else {
+      } 
+    else {
         sum += mixedArr[i];
       }
     }
